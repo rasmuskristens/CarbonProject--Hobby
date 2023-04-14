@@ -1,0 +1,25 @@
+﻿@page "/post"
+@using CarbonProject.Client.ViewModel;
+@using CarbonProject.Shared
+@inject HttpClient Http
+@using CarbonProject.Shared.PostClass;
+@using Newtonsoft.Json
+
+
+
+<h3>PostTravel</h3>
+
+<EditForm Model="@flight" OnValidSubmit="@AddFlight">
+   
+</EditForm>
+
+@code {
+
+    private Flight flight = new Flight();
+
+    public void AddFlight()
+    {
+        
+    }
+
+}
